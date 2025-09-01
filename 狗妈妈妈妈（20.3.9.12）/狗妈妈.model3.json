@@ -1,0 +1,158 @@
+{
+  "Version": 3,
+  "Bounds": {
+    "Width": 9.436228,
+    "Height": 12.50514,
+    "CenterX": 0.0,
+    "CenterY": 0.1
+  },
+  "FileReferences": {
+    "Moc": "狗妈妈.moc3",
+    "Textures": [
+      "texture/texture_00.png"
+    ],
+    "Physics": "狗妈妈.physics3.json",
+    "Motions": {
+      "Tap头": [
+        {
+          "Name": "1",
+          "File": "motion/摸头.motion3.json",
+          "Sound": "sound/【诶 在看着我...】_01.mp3",
+          "Text": "诶 ..在看着我...",
+          "TextDuration": 1000
+        },
+        {
+          "Name": "2",
+          "File": "motion/哼哼哼.motion3.json",
+          "Sound": "sound/勝利①.mp3",
+          "Text": "哼哼哼"
+        }
+      ],
+      "Tap身体": [
+        {
+          "Name": "1",
+          "File": "motion/dd斩首.motion3.json",
+          "Sound": "sound/技①DD斬首.mp3",
+          "SoundVolume": 0.5851851
+        },
+        {
+          "Name": "2",
+          "File": "motion/摸脸.motion3.json",
+          "Sound": "sound/登場.mp3",
+          "Text": "「我来自辣椒星球，叫神楽七奈！」"
+        }
+      ],
+      "Tap呆毛": [
+        {
+          "Name": "1",
+          "File": "motion/kiya.motion3.json",
+          "Sound": "sound/キラッ☆.mp3",
+          "Text": "「キラッ☆」"
+        },
+        {
+          "Name": "2",
+          "File": "motion/疼！.motion3.json",
+          "Sound": "sound/ダメージ②.mp3",
+          "Text": "「疼！」（别拔呆毛）"
+        }
+      ],
+      "Tap手": [
+        {
+          "Name": "1",
+          "File": "motion/不行了.motion3.json",
+          "Sound": "sound/戦闘不能90%.mp3",
+          "Text": "不行・・・了・・・"
+        }
+      ],
+      "Start": [
+        {
+          "Name": "1",
+          "File": "motion/摸头.motion3.json",
+          "Sound": "sound/登場.mp3",
+          "Text": "「我来自辣椒星球，叫神楽七奈」"
+        }
+      ],
+      "Tapother": [
+        {
+          "Name": "1",
+          "File": "motion/soko.motion3.json",
+          "Sound": "sound/攻撃③.mp3",
+          "Text": "「这里！」"
+        },
+        {
+          "Name": "2",
+          "File": "motion/soko.motion3.json",
+          "Sound": "sound/攻撃①.mp3",
+          "Text": "「ha！」"
+        },
+        {
+          "Name": "3",
+          "File": "motion/soko.motion3.json",
+          "Sound": "sound/攻撃②.mp3",
+          "Text": "「ei！」"
+        }
+      ],
+      "Tap右手": [
+        {
+          "Name": "1",
+          "File": "motion/「危ない！」.motion3.json",
+          "Sound": "sound/回避.mp3",
+          "Text": "「危险！（崽 你在做什么啊kora！）」"
+        },
+        {
+          "Name": "2",
+          "File": "motion/hentai.motion3.json",
+          "Sound": "sound/【你这个hentai,不管你了，哼~】_01.mp3",
+          "Text": "「你这个hentai,不管你了，哼~」"
+        }
+      ]
+    }
+  },
+  "Groups": [
+    {
+      "Target": "Parameter",
+      "Name": "EyeBlink",
+      "Ids": [
+        "ParamEyeLOpen",
+        "ParamEyeROpen"
+      ]
+    },
+    {
+      "Target": "Parameter",
+      "Name": "LipSync",
+      "Ids": [
+        "ParamMouthOpenY"
+      ]
+    }
+  ],
+  "HitAreas": [
+    {
+      "Name": "呆毛",
+      "Id": "ArtMesh3",
+      "Motion": "Tap呆毛"
+    },
+    {
+      "Name": "头",
+      "Id": "ArtMesh4"
+    },
+    {
+      "Name": "手",
+      "Id": "ArtMesh28",
+      "Motion": "Tap手"
+    },
+    {
+      "Name": "右手",
+      "Id": "ArtMesh33"
+    },
+    {
+      "Name": "身体",
+      "Id": "ArtMesh32",
+      "Motion": "Tap身体"
+    },
+    {
+      "Name": "other",
+      "Id": "ArtMesh36",
+      "Motion": "Tapother"
+    }
+  ]
+}
